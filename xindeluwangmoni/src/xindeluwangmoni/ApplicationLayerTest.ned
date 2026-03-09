@@ -1,30 +1,18 @@
-//
-// Copyright (C) 2006-2011 Christoph Sommer <christoph.sommer@uibk.ac.at>
-//
-// Documentation for these modules is at http://veins.car2x.org/
-//
-// SPDX-License-Identifier: GPL-2.0-or-later
-//
-// This program is free software; you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation; either version 2 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-//
-
 package org.car2x.veins.subprojects.xindeluwangmoni;
 import org.car2x.veins.modules.application.ieee80211p.DemoBaseApplLayer;
 
 simple ApplicationLayerTest extends DemoBaseApplLayer
 {
-    @class(xindeluwangmoni::ApplicationLayerTest);
-    @display("i=block/app2");
+    parameters:
+        @class(xindeluwangmoni::ApplicationLayerTest);  // 关键：绑定到你的C++类
+
+        // V2V 仅用到的参数
+        double v2vRadius @unit(m) = default(150m);
+        double baseErrorRate = default(0.01);
+        double eavesdropRatio = default(0.0);
+        double qberAlarm = default(0.11);
+        double sampleFraction = default(0.125);
+        double fEC = default(1.15);
+        int    Nraw = default(4096);
+        bool useSARG04 = default(false);
 }

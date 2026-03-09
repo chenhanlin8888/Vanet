@@ -33,9 +33,12 @@
 
 <!-- debug config -->
 <launch>
-    <copy file="erlangen.net.xml" />
-    <copy file="erlangen.rou.xml" />
-    <copy file="erlangen.poly.xml" />
-    <copy file="erlangen.sumo.cfg" type="config" />
+    <copy file="osm.net.xml" />
+    <copy file="osm.rou.xml" />
+    <copy file="osm.poly.xml" />
+
+    <copy file="osm.sumocfg" type="config" />
+    <!-- 直接启动 sumo-gui，并指定 TraCI 端口 9999 -->
+    <command value="/home/veins/src/sumo/bin/sumo-gui --remote-port 9999 -c osm.sumocfg"/>
 </launch>
 

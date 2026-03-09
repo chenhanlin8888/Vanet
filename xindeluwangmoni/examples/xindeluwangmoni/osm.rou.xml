@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-05 04:22:49 by Eclipse SUMO duarouter Version 1.11.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="osm.net.xml"/>
+        <route-files value="osm.passenger.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="osm.rou.xml"/>
+        <alternatives-output value="osm.rou.alt.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="veh_passenger" vClass="passenger"/>
+    <vehicle id="veh0" type="veh_passenger" depart="0.00" departLane="best" departSpeed="max">
+        <route edges="4309638#0 624798162#1 624798162#2 23450475#1 848277249#0 848277249#1 804339683#1 159801219#1 159801219#6 -159801219#6"/>
+    </vehicle>
+    
+    <vehicle id="veh2" type="veh_passenger" depart="1.00" departLane="best" departSpeed="max">
+        <route edges="848277241#0 848277241#1 804339683#1 -1135084614#1 -624534623#4 -624534623#2 780732453#0 780732453#1 780732453#2 780732454#1"/>
+    </vehicle>
+    
+        
+    
+   
+    
+</routes>

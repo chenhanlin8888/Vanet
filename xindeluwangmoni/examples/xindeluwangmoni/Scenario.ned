@@ -21,8 +21,9 @@
 //
 
 package xindeluwangmoni.examples.xindeluwangmoni;
-
+import org.car2x.veins.nodes.RSU;
 network Scenario extends org.car2x.veins.nodes.Scenario
 {
     submodules:
+      
 }

@@ -23,10 +23,12 @@
 import veins.base.utils.Coord;
 import veins.modules.messages.BaseFrame1609_4;
 import veins.base.utils.SimpleAddress;
+import veins.modules.application.traci.TraCIDemo11pMessage;
+
 
 namespace xindeluwangmoni;
 
-packet ApplicationLayerTestMessage extends veins::BaseFrame1609_4 {
+packet ApplicationLayerTestMessage extends veins::TraCIDemo11pMessage {
     string demoData;
     veins::LAddress::L2Type senderAddress = -1;
     int serial = 0;
