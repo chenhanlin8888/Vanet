@@ -1,0 +1,17 @@
+[build-system]
+requires = [
+  "scikit-build-core>=0.8",
+  "pybind11>=2.12",
+  "cmake>=3.18",
+  "ninja"
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "vanet"
+version = "0.1.0"
+description = "VANET C++ Python package"
+requires-python = ">=3.10"
+
+[tool.scikit-build]
+wheel.packages = ["vanet"]
